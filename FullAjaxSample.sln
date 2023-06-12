@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullAjaxSample", "FullAjaxSample\FullAjaxSample.csproj", "{49C66808-A1BB-41DC-ABB4-654075552DCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullAjaxAmple.BL", "FullAjaxAmple.BL\FullAjaxAmple.BL.csproj", "{3511D186-0E94-4C37-8D58-CC8695C9DC5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullAjaxSample.Entities", "FullAjaxSample.Entities\FullAjaxSample.Entities.csproj", "{99D17A20-9C33-4568-BF60-E3928BE1CCBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullAjaxSample.DAL", "FullAjaxSample.DAL\FullAjaxSample.DAL.csproj", "{2C57102C-9DF8-4989-9C0E-0ACEB477E2EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49C66808-A1BB-41DC-ABB4-654075552DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C66808-A1BB-41DC-ABB4-654075552DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C66808-A1BB-41DC-ABB4-654075552DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C66808-A1BB-41DC-ABB4-654075552DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3511D186-0E94-4C37-8D58-CC8695C9DC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3511D186-0E94-4C37-8D58-CC8695C9DC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3511D186-0E94-4C37-8D58-CC8695C9DC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3511D186-0E94-4C37-8D58-CC8695C9DC5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D17A20-9C33-4568-BF60-E3928BE1CCBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D17A20-9C33-4568-BF60-E3928BE1CCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D17A20-9C33-4568-BF60-E3928BE1CCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D17A20-9C33-4568-BF60-E3928BE1CCBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C57102C-9DF8-4989-9C0E-0ACEB477E2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C57102C-9DF8-4989-9C0E-0ACEB477E2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C57102C-9DF8-4989-9C0E-0ACEB477E2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C57102C-9DF8-4989-9C0E-0ACEB477E2EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09D7EBC0-14F5-4DFD-9EB9-B2352B4CF663}
+	EndGlobalSection
+EndGlobal

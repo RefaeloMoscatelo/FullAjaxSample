@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@*<input type="button" value="Load Products from server" id="btnLoadProducts" />*@
+<div class="css_tbl_example">
+    <table class="customTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody id="productDataTable">
+        </tbody>
+    </table>
+</div>
+
+<script type="text/template" id="ProdyctRowTemplate">
+    <tr data-id="${ID}">
+        <td>${ID}</td>
+        <td>${Name}</td>
+        <td>${Price}</td>
+        <td>${Description}</td>
+        <td>
+            <a href="#" class="delete">Delete</a>
+        </td>
+    </tr>
+</script>
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $("#productDataTable").on("click", ".delete", function (e) {
+                var CurrentTR = $(this).closest("tr");
+                e.preventDefault();
+                e.stopPropagation();
+                var currentProductId = CurrentTR.closest("tr").data('id');
+                //option 1
+                //$.post("/Products/Delete", { id: currentProductId }, function () {
+                //    CurrentTR.remove();
+                //}).error(function () {
+                //        alert("אי אפשר למחוק");
+                //    });
+                //option 2
+                $.ajax({
+                    type: 'POST',
+                    url: "/Products/Delete",
+                    data: { id: currentProductId },
+                    error: function () {
+                        alert("אי אפשר למחוק");
+                    }
+                });
+            });
+          /*  $('#btnLoadProducts').click(function () {*/
+                $.getJSON("/Products/GetAll", function (result) {
+                    $("#ProdyctRowTemplate").tmpl(result).appendTo($('#productDataTable'));
+                    //for (var i = 0; i < result.length; i++) {
+                    //    $("<tr>")
+                    //        .append($("<td>").html(result[i].ID))
+                    //        .append($("<td>").html(result[i].DisplayName))
+                    //        .append($("<td>").html(result[i].Price))
+                    //        .append($("<td>").html(result[i].Description))
+                    //        .appendTo($('#productDataTable'));
+                    //}
+                });
+            /*  });*/
+          
+        });
+
+    </script>
+}
